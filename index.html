@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Andrea</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #91292e;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #91292e;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Pasteleria Andrea</h1>
+    </header>
+
+    <section>
+        <article>
+            <h2>Pasteleria Andrea - Opciones y Precios</h2>
+            <h3>Sabores Pasteles</h3>
+                <ul>
+                    <li>Chocolate ($120 MXN)</li>
+                    <li>Vainilla ($100 MXN)</li>
+                    <li>Tres Leches ($120 MXN)</li>
+                    <li>Fresa ($150 MXN)</li>
+                </ul>
+                <h3>Adornos</h3>
+                <ul>
+                    <li>Frutas ($50 MXN)</li>
+                    <li>Rosas ($40 MXN)</li>
+                    <li>Galletas ($30 MXN)</li>
+                    <li>Velas ($30 MXN)</li>
+                </ul>
+            </article>
+        <article>
+            <a href="./formularioCliente.html" target="_top">Realizar un Pedido</a>
+            <br />
+        </article>
+    </section>
+
+    <footer>
+        <p>Contacto: <a href="mailto:serviciocliente@andrea.com">serviciocliente@andrea.com</a> </p>
+    </footer>
+
+</body>
+
+</html>

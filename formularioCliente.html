@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Andrea</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #91292e;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #91292e;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Pasteleria Andrea</h1>
+    </header>
+
+    <section>
+        <article>
+            <h2>Pasteleria Andrea - Formulario de Pedido</h2>
+            
+            <form action="/procesamientoPedido.js" id="FormularioPedido" method="post">
+
+                <h4>Datos de Contacto</h4>
+                    <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre"><br>
+                    <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo"><br>
+                    <label for="telefono">Telefono</label>
+                        <input type="number" id="telefono" name="telefono" max="10"><br>
+                    <label for="fecha">Fecha de Entrega</label>
+                        <input type="date" id="fecha" name="fecha"><br>
+                    <p>Descripcion General del pastel</p>
+                    <textarea name="descripción" rows="10" cols="30">Describe tu pastel</textarea>
+    
+                <h4>Selección de sabores y adornos</h4>
+                <h5>Sabores</h5>
+                    <input type="checkbox" id="chocolate" name="chocolate" value="Chocolate">
+                        <label for="chocolate">Chocolate ($120 MXN)</label><br>
+                    <input type="checkbox" id="vainilla" name="vainilla" value="Vainilla">
+                        <label for="vainilla">Vainilla ($100 MXN)</label><br>
+                    <input type="checkbox" id="tresLeches" name="tresLeches" value="tresLeches">
+                        <label for="">Tres Leches ($120 MXN)</label><br>
+                    <input type="checkbox" id="fresa" name="fresa" value="Fresa">
+                        <label for="">Fresa ($150 MXN) </label><br>
+                <h5>Sabores</h5>
+                    <input type="checkbox" id="frutas" name="frutas" value="Frutas">
+                        <label for="frutas">Frutas ($50 MXN)</label><br>
+                    <input type="checkbox" id="rosas" name="rosas" value="Rosas">
+                        <label for="rosas">Rosas ($40 MXN)</label><br>
+                    <input type="checkbox" id="galletas" name="galletas" value="Galletas">
+                        <label for="galletas">Galletas ($30 MXN)</label><br>
+                    <input type="checkbox" id="velas" name="velas" value="velas">
+                        <label for="velas">Velas ($30 MXN) </label><br><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset">
+            </form>
+            
+          <br><a href="./index.html">Regresar a Pagina Principal</a>
+
+        </article>
+    </section>
+
+    <footer>
+        <p>Contacto: <a href="mailto:serviciocliente@andrea.com">serviciocliente@andrea.com</a> </p>
+    </footer>
+
+</body>
+
+</html>
